@@ -1,0 +1,17 @@
+
+body {
+	background-color: #b0c4de;
+}
+
+.col-4 > h2 {
+	color: white;
+}
+
+.card {
+	margin-bottom: 15px;
+	border: solid red 1px;
+}
+
+h1 {
+	color: #708090;
+}
