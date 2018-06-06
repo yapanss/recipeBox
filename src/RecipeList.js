@@ -14,6 +14,7 @@ export default class RecipeList extends React.Component {
     	this.toggleModal = this.toggleModal.bind(this)
     	this.togglePopover = this.togglePopover.bind(this)
     	this.edit = this.edit.bind(this)
+    	
 
 	}
 

@@ -26,7 +26,7 @@ constructor(props) {
   render() {
   	
     return (
-    	<div className="mb-3">
+    	<div className="mb-3" style={{marginLeft:"10%", marginRight:"10%"}}>
     		<Button color="primary" className="btn btn-block" onClick={this.props.toggleForm}><FaPlus /> Add a new recipe</Button>
     		<form style = {this.props.formDisplay}>
     			<div className = "form-group">

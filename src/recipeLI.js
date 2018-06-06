@@ -1,9 +1,8 @@
 
 
 import React from 'react'
-import FaTrash from 'react-icons/lib/fa/trash'
+import MdDelete from 'react-icons/lib/md/delete-forever'
 import FaInfo from 'react-icons/lib/fa/info'
-import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { Card, CardImg, CardText, CardBody, CardLink, CardTitle, CardSubtitle, CardHeader, CardFooter} from 'reactstrap'
 import { Button, Popover, PopoverBody, PopoverHeader } from 'mdbreact'
 
@@ -46,16 +45,14 @@ export default class RecipeList extends React.Component {
 					
 					<li style={{
 								
-								backgroundColor: "orange", 
 								marginBottom: "15px"
 								
 								}}
 						>
 						<div className="row">
-							<p className="col-10" onClick={this.show} style={{cursor: "pointer", fontSize: "1.7em", 
+							<p className="col-9 text-center bg-warning" onClick={this.show} style={{cursor: "pointer", fontSize: "1.7em", 
 								color: "white"}}>{this.props.recipe.title}</p>
-							<Button className="col-1" color="info" style={{float: "right"}} onClick={this.edit}><FaInfo /></Button>
-							<Button className="col-1" color="danger" style={{float: "right"}} onClick={this.erase}><FaTrash /></Button>
+							<Button className="btn  col-3 sm" color="danger" style={{marginBottom: "15px"}} onClick={this.erase}><MdDelete size={28} /> Remove</Button>
 						</div>
 						
 					</li>
